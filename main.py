@@ -21,3 +21,13 @@ def divideRoute():
 @app.route('/mod/<int:num1>/<int:num2>')
 def mod():
     return mod(num1,num2)
+  
+#addition function
+
+def add(a,b):
+	return a+b
+	
+#subtraction function
+
+def subtract(a,b):
+	return a-b
