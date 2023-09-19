@@ -1,6 +1,7 @@
 Adeel:
     Initiazlized Scaffolding
     Wrote a Flask Wrapper around the existing Calculator functions
+    Docker Image and Github workflow to update image automatically
 Faziha:
 	Addition function
 	Subtraction function
