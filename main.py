@@ -2,6 +2,16 @@ import Flask
 
 app = Flask(__name__)
 
+#addition function
+
+def add(a,b):
+	return a+b
+	
+#subtraction function
+
+def subtract(a,b):
+	return a-b
+
 @app.route('/add/<int:num1>/<int:num2>')
 def addRoute():
     return add(num1, num2)
@@ -22,12 +32,4 @@ def divideRoute():
 def mod():
     return mod(num1,num2)
   
-#addition function
 
-def add(a,b):
-	return a+b
-	
-#subtraction function
-
-def subtract(a,b):
-	return a-b
