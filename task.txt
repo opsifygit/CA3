@@ -4,3 +4,6 @@ Adeel:
 Faziha:
 	Addition function
 	Subtraction function
+Maryam:
+    Multiplication function
+    Division Function

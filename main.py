@@ -1,4 +1,4 @@
-import Flask
+from flask import Flask
 
 app = Flask(__name__)
 
@@ -12,9 +12,15 @@ def add(a,b):
 def subtract(a,b):
 	return a-b
 
-@app.route('/add/<int:num1>/<int:num2>')
+def multiply(num1, num2):
+    return (num1*num2)
+
+def divide(num1, num2):
+    return (num1/num2)
+
+@app.route('/add/<int:num1>/<int:num2>', methods=['GET'])
 def addRoute():
-    return add(num1, num2)
+    return f'{add(num1, num2)}'
 
 @app.route('/subtract/<int:num1>/<int:num2>')
 def subtractRoute():
@@ -31,5 +37,8 @@ def divideRoute():
 @app.route('/mod/<int:num1>/<int:num2>')
 def mod():
     return mod(num1,num2)
+
+    
   
+
 
